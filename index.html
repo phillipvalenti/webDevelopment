@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>What I learned So Far</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	<body>
+		<!--pageAlign will be used to center all of the content on webpage-->
+		<div id="pageAlign">
+			<header>
+				<div class="leftSide" id="headImage">
+					<img src="http://stratanews.net/wp-content/uploads/2013/02/At-Symbol.png" alt="headerImage" />
+				</div>
+				<div id="headText">
+					<h1>What is Web Development?</h1>
+					<nav>
+						<a href="index.html">Home</a>
+						<a href="http://www.w3schools.com">w3schools</a>
+						<a href="http://www.codecademy.com">Codecademy</a>
+					</nav>
+				</div>
+			</header>
+			<!--Float aside left-->
+			<div id="sideBar">
+				<aside>
+					<!--look up how to put "&" on text-->
+					<h2>What I learned -</h2>
+					<p>This is a special page, dedicated to what I've learned about HTML &amp CSS. Either on purpose, or on accident, here are just a few things I learned...</p>
+				</aside>
+			</div>
+			<!--The Basics of HTML programming-->
+			<section class="newSection">
+				<h2>The Basics</h2>
+				<p>Web developement is the process of building a website. To build a website you start by building code. The programming language we started with is HTML. HTML stands for "Hypertext Markup Language."</p>
+				<p>The basic structure looks like this, which includes a Doctype, html stags, head, and a body. See how they nest inside eachother?</p>
+				<!--Show a basic outline for text-->
+				<div class="coding center">
+					<p>&lt!doctype html&gt <br/> 
+					&lthtml&gt <br/>
+					<br/> 
+					<span class="indent">&lthead&gt <br/></span>
+					<span class="indent">&lt/head&gt <br/></span>
+					<br/>
+					<span class="indent">&ltbody&gt <br/></span>
+					<span class="indent">&lt/body&gt <br/></span>
+					<br/>
+					&lt/html&gt</p>
+				</div>
+				<!--look up how to put "<>" on text-->
+				<p>Then we started to learn about tags in order to make text show up on the page. This is in a <span class="coding">&ltp&gt</span> tag. This sentence you are reading right now is in a <span class="coding">&ltp&gt</span> tag!</p>
+				<!--look up how to put "<>" on text-->
+				<p>Then we learned about heading tags, or <span class="coding">&lth<span class="tilted">n</span>&gt</span> tags, <span class="tilted">n</span> being anywhere between 1-6. These are used for heading or titling a section.</p>
+				<div class="center" id="manyHeads">
+					<h1>This is <span class="coding">&lth1&gt</span>!</h1>
+					<h2>This is <span class="coding">&lth2&gt</span>!</h2>
+					<h3>This is <span class="coding">&lth3&gt</span>!</h3>
+					<h4>This is <span class="coding">&lth4&gt</span>!</h4>
+					<h5>This is <span class="coding">&lth5&gt</span>!</h5>
+					<h6>This is <span class="coding">&lth6&gt</span></h6>
+				</div>
+				<!--look up how to put "<>" on text-->
+				<p>Then we learned about tables. Tables are best only when used to display data. You have elements such as <span class="coding">&ltth&gt</span> (table heading), <span class="coding">&lttr&gt</span> (table row), and <span class="coding">&lttd&gt</span> (table cell) nested inide of a <span class="coding">&lttable&gt</span> tag. See below.</p>
+				<div class="center">
+					<table>
+						<th>Fruits</th>
+						<th>Vegetables</th>
+						<tr>
+							<td>Apples</td>
+							<td>Potatoes</td>
+						</tr>
+						<tr>
+							<td>Oranges</td>
+							<td>Carrots</td>
+						</tr>
+					</table>
+				</div>
+				<p>So that's great and all, but what if I wanted to add some <span class="tilted">zazz</span> to the page? Like with a cute puppy picture?</p>
+				<div class="center">
+					<img src="http://33.media.tumblr.com/45a83a77dcdaf351a9be2d4a7441551f/tumblr_n8039s4bbq1s8mgkyo8_500.jpg" alt="cutePuppy" />
+				</div>
+				<!--look up how to put "<>" on text-->
+				<p>You use an <span class="coding">&ltimg&gt</span> tag.</p>
+				<p>Lets say you wanted to put something down as a note for yourself, that you don't need to render on your webpage? You can use a comment, which looks like this:</p>
+				<!--Put code down for a comment that will actually render-->
+				<div class="center">
+					<span class="coding" id="greyScale"><p>&lt!--Remember to close your tags!--&gt</p></span>
+				</div>
+				<!--look up how to put "<>" on text-->
+				<p>We can also group items together using <span class="coding">&ltdiv&gt</span> tags, for either layout or styling. Each of the examples on this page were grouped together with div tags.</p>
+				<!--look up how to put "<>" on text-->
+				<p>We can also add specific styling to elements inline using a <span class="coding">&ltspan&gt</span> tag.</p>
+				<!--Put code down for a comment that will actually render-->
+				<div class="center">
+					<span class="coding"><p>&ltp&gtOnly one word is &ltspan&gtred&lt/span&gt.&lt/p&gt</p></span>
+					<p>Only one word is <span class="red">red</span>.</p>
+				</div>
+				<p>These are good to style specific parts of an element and not split up an element.</p>
+			</section>
+			<!--Adding CSS-->
+			<section class="newSection">
+				<h2>CSS aka "Flavor"</h2>
+				<p>Congrats! We've now learned enough material to make a page from 1996! But if you really want to give your friend's GeoCities' webpage a run for it's money, we should add some style to it. We can use CSS, or Cascasding Style Sheets, to achieve this. Styling could be anything from placement on a webpage, to changing the color on the font. Using CSS we can draw attention to specific parts of a page, to make it asthetically appealing and easy to navagate information. They can be applied to any element, class, or ID on a page. Here is an example:</p>
+				<!--Put code down for a CSS rule that will actually render-->
+				<div class="center coding">
+					<p><span class="red">p</span> {<br/>
+					<span class="indent">font-family: helvetica;</span><br/>
+					}</p>
+				</div>
+				<p>This code is put on a separate page, and it can be applied to multiple elements, or just one specific element. In the example above all the paragraph tags will now be in the Helvetica font.</p>
+				<p>Each element can be thought of as a box. Each box has four sections. The content, the padding between the content and the border, the border, and the margin around the border. See the example below (note that the dashed line represents the end of the margin space).</p>
+				<div class="center" id="boxModel">
+					<p>Content</p>
+				</div>
+				<p>The box model is an effective tool when it comes to grouping elements together, and spacing out other elements accordingly.</p>
+			</section>
+			<!--The most recent versions HTML5 and CSS3-->
+			<section class="newSection">
+				<!--look up how to make "&" render correctly-->
+				<h2>HTML5 &amp CSS3</h2>
+				<p>There are several versions of HTML and CSS, and the current versions nearing completion are HTML5 and CSS3. With these versions we are able to make code easier to understand and have some creative new tools in order to animate code, without the aid of javascript.</p>
+				<!--lookup how to put"<>" and put coding spans on tag names-->
+				<p>Some of the new tags created for HTML5 are <span class="coding">&ltheader&gt</span>, <span class="coding">&ltnav&gt</span>, <span class="coding">&ltsection&gt</span>, <span class="coding">&ltaside&gt</span>, and <span class="coding">&ltfooter&gt</span>. They are just specified div names, but they work just the same as any normal <span class="coding">&ltdiv&gt</span>. The only difference is that they are are semantic, meaning they relate better with tradition printing and layouts. The semantic tags were used in generating this page.</p>
+				<p>With CSS3 we can use new properties to add unique effects to text, as well as elements. A couple of them are called transforms and animations.</p>
+				<!--In this element use a transform to rotate text-->
+				<div class="center" id="rotate">
+					<p>This text should be slightlyt rotated thanks to <span class="coding">-transform</span>.</p>
+				</div>
+				<!--In this element the text should change color-->
+				<div class="center" id="colorChange">
+					<p>Thanks for the <span class="coding">-animation</span> property the background-color should change from yellow to blue.</p>
+				</div>
+			</section>
+			<!--tbd is about we are learning next-->
+			<section id="tbd">
+				<h2>So what is next?</h2>
+				<p>And that about sums up what we have learned so far, looks like the next topic is javascript.</p>
+				<div class="center">
+					<h3>To be continued!</h3>
+				</div>
+			</section>
+		<!--Use copyright symbol in footer-->
+		<footer>What a fancy website &copy <a href="index.html">Contact</a></footer>
+		</div>
+	</body>
+</html>
